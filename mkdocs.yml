@@ -1,0 +1,39 @@
+site_name: 计算机组成原理
+
+theme:
+  name: 'material'
+  language: 'zh'
+  font: false
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+
+  features:
+    - navigation.tabs
+    - navigation.indexes
+
+  nav:
+    - index.md
+    - 概要: 1.md
+    - 数据的表示与运算: 
+        - ch01/index.md
+
+    - 主存储器: 1.md
+    - 程序的机器级表示: 1.md
+    - CPU: 1.md
+    - 总线: 
+      - ch02/index.md
+      - 总线分类: ch02/1.md
+    - IO: 1.md
