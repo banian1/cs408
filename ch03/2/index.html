@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../1/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../3/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
     
     
       
-        <title>计算机组成原理</title>
+        <title>I/O设备与接口 - 计算机组成原理</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -36,7 +40,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#io" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -71,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="/." title="计算机组成原理" class="md-header__button md-logo" aria-label="计算机组成原理" data-md-component="logo">
+    <a href="../.." title="计算机组成原理" class="md-header__button md-logo" aria-label="计算机组成原理" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -91,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              I/O设备与接口
             
           </span>
         </div>
@@ -186,7 +195,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -205,7 +214,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/ch01/" class="md-tabs__link">
+        <a href="../../ch01/" class="md-tabs__link">
           
   
     
@@ -225,7 +234,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/ch02/" class="md-tabs__link">
+        <a href="../../ch02/" class="md-tabs__link">
           
   
     
@@ -241,11 +250,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/ch03/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -280,7 +291,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="计算机组成原理" class="md-nav__button md-logo" aria-label="计算机组成原理" data-md-component="logo">
+    <a href="../.." title="计算机组成原理" class="md-nav__button md-logo" aria-label="计算机组成原理" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -298,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -339,7 +350,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/ch01/" class="md-nav__link ">
+            <a href="../../ch01/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -403,7 +414,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/ch02/" class="md-nav__link ">
+            <a href="../../ch02/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -436,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ch02/1/" class="md-nav__link">
+      <a href="../../ch02/1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -457,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ch02/2/" class="md-nav__link">
+      <a href="../../ch02/2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -478,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ch02/3/" class="md-nav__link">
+      <a href="../../ch02/3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -499,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ch02/4/" class="md-nav__link">
+      <a href="../../ch02/4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,6 +535,8 @@
       
   
   
+    
+  
   
   
     
@@ -546,19 +559,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/ch03/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -569,13 +585,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Ch03
@@ -591,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ch03/1/" class="md-nav__link">
+      <a href="../1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -609,10 +625,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/ch03/2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    I/O设备与接口
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -621,6 +657,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#io_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O设备
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I/O设备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      输入设备
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      输出设备
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#io_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他I/O设备
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O 接口
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      接口的功能和组成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      接口类型
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -633,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ch03/3/" class="md-nav__link">
+      <a href="../3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -654,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ch03/4/" class="md-nav__link">
+      <a href="../4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/ch03/5/" class="md-nav__link">
+      <a href="../5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -713,6 +838,85 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#io_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O设备
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="I/O设备">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      输入设备
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      输出设备
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#io_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他I/O设备
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O 接口
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      接口的功能和组成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      接口类型
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -724,8 +928,101 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="io">I/O设备与接口</h1>
+<h2 id="io_1">I/O设备</h2>
+<hr />
+<p>大致可分为3类</p>
+<ol>
+<li>人机交互设备</li>
+<li>计算机信息的存储设备</li>
+<li>机-机通信设备</li>
+</ol>
+<p>本节主要介绍人机交互设备,可分为输人设备和输出设备两种,并且有的设备既具有输人功能,又具有输出功能。</p>
+<p>关于存储设备已在第4章介绍过,有关机-机通信设备将在“计算机网络”课程中讲述。</p>
+<h3 id="_1">输入设备</h3>
+<ol>
+<li>键盘</li>
+<li>鼠标</li>
+<li>触摸屏</li>
+</ol>
+<h3 id="_2">输出设备</h3>
+<ol>
+<li>显示设备</li>
+</ol>
+<h3 id="io_2">其他I/O设备</h3>
+<details class="note">
+<summary>终端设备</summary>
+<p>终端是由显示器和键盘组成的一套独立完整的I/O设备,它可以通过标准接口接到远离主机的地方使用。终端与显示器是两个不同的概念,终端的结构比显示器复杂,它能完成显示控制与存储、键盘管理及通信控制等,还可完成简单的编辑操作。</p>
+</details>
+<h2 id="io_3">I/O 接口</h2>
+<p>接口可以看做是两个系统或两个部件之间的交接部分,它既可以是两种硬设备之间的连接电路,也可以是两个软件之间的共同逻辑边界。</p>
+<p>I/O接口通常是指主机与I/O设备之间设置的一个硬件电路及其相应的软件控制。由图5.13可知,<img alt="5.13" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240806002245.png" />不同的I/O设备都有其相应的设备控制器,而它们往往都是通过I/O接口与主机取得联系的。主机与I/O设备之间设置接口的理由如下:</p>
+<ul>
+<li>一台机器通常配有多台I/O设备,它们各自有其设备号(地址),通过接口可实现I/O设备的选择。</li>
+<li>I/O设备种类繁多,速度不一,与CPU速度相差可能很大,通过接口可实现数据缓冲,达到速度匹配</li>
+<li>有些 I/0 设备可能串行传送数据,而 CPU 一般为并行传送,通过接口可实现数据串-并格式的转换。</li>
+<li>电平转换</li>
+<li>CPU启动I/0设备工作,要向I/O设备发各种控制信号,通过接口可传送控制命令。</li>
+<li>I/0 设备需将其工作状态(如“忙”“就绪”,“错误”、“中断请求”等)及时向 CPU 报告通过接口可监视设备的工作状态,并可保存状态信息,供CPU查询。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">接口与端口</p>
+<p>值得注意的是,接口(Interface)和端口(Port)是两个不同的概念。端口是指接口电路中的一些寄存器,这些寄存器分别用来存放数据信息、控制信息和状态信息,相应的端口分别称为数据端口、控制端口和状态端口。若干个端口加上相应的控制逻辑才能组成接口。CPU 通过输人指令,从端口读人信息,通过输出指令,可将信息写人到端口中。</p>
+</div>
+<h2 id="_3">接口的功能和组成</h2>
+<ol>
+<li>总线连接方式的I/O接口电路</li>
+</ol>
+<p>图5.28所示为总线结构的计算机,每一台1/0设备都是通过 1/0接口挂到系统总线上的。</p>
+<p>图中的 I/0 总线包括数据线、设备选择线、命令线和状态线。
+<img alt="5.28" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240806003105.png" /></p>
+<ol>
+<li>接口的功能和组成</li>
+</ol>
+<p>根据上述设置接口的理由,可归纳出接口通常应具有以下几个功能以及相应的硬件配置。</p>
+<ul>
+<li>选址</li>
+<li>传送命令</li>
+<li>传送数据</li>
+<li>反应I/O设备工作状态</li>
+</ul>
+<h2 id="_4">接口类型</h2>
+<p>按数据传送方式分类</p>
+<ul>
+<li>并行</li>
+<li>串行</li>
+</ul>
+<p>按功能选择的灵活性分类</p>
+<ul>
+<li>可编程</li>
+<li>不可编程</li>
+</ul>
+<p>按通用性分类</p>
+<ul>
+<li>通用</li>
+<li>专用</li>
+</ul>
+<p>按数据传送的控制方式分类</p>
+<ul>
+<li>程序型</li>
+<li>DMA型</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -759,10 +1056,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.indexes"], "search": "/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
