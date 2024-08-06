@@ -679,6 +679,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    程序中断方式
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -688,6 +699,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      中断的概念
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      中断的产生
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      程序中断方式的接口电路
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O中断处理过程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      中断服务程序的流程
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -742,6 +817,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      中断的概念
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      中断的产生
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      程序中断方式的接口电路
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      I/O中断处理过程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      中断服务程序的流程
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -756,6 +884,59 @@
 
 
 <h1 id="_1">程序中断方式</h1>
+<h2 id="_2">中断的概念</h2>
+<p>计算机在执行程序的过程中,当出现异常情况或特殊请求时,计算机停止现行程序的运行,转向对这些异常情况或特殊请求的处理,处理结束后再返回到现行程序的间断处,继续执行原程序,这就是“中断”。</p>
+<p>中断是现代计算机能有效合理地发挥效能和提高效率的一个十分重要的功能。</p>
+<p>通常又把实现这种功能所需的软硬件技术统称为中断技术。</p>
+<h2 id="_3">中断的产生</h2>
+<p>在 I/O设备与主机交换信息时,由于设备本身机电特性的影响,其工作速度较低,与CPU无法匹配,因此,CPU启动设备后,往往需要等待一段时间才能实现主机与 I/0设备之间的信息交换。如果在设备准备的同时,CPU不作无谓的等待,而继续执行现行程序,只有当I/O设备准备就绪向CPU提出请求后,再暂时中断CPU现行程序转入I/O服务程序,这便产生了I/0中断。</p>
+<p>下图是CPU与打印机并行工作的时间示意图</p>
+<p><img alt="5.36" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807010401.png" /></p>
+<p>引入中断不仅是为了适应I/O设备工作速度低的问题,也为了应对一切突发事件,例如掉电,响应.</p>
+<h2 id="_4">程序中断方式的接口电路</h2>
+<ol>
+<li>
+<p>中断请求触发器和中断屏蔽触发器</p>
+</li>
+<li>
+<p>排队器</p>
+</li>
+<li>
+<p>中断向量地址形成部件 (设备编码器)</p>
+</li>
+</ol>
+<p><img alt="5.39.40" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807011209.png" /></p>
+<h2 id="io">I/O中断处理过程</h2>
+<ol>
+<li>CPU 响应中断的条件和时间</li>
+</ol>
+<p>CPU响应I/O设备提出中断请求的条件是必须满足CPU中的允许中断触发器EINT为“1”。</p>
+<p>该触发器可用开中断指令置位(称为开中断);</p>
+<p>也可用关中断指令或硬件自动使其复位(称为关中断)。</p>
+<p>CPU在每条指令执行阶段结束前向接口发出中断查询信号,以获得I/O中断请求.</p>
+<ol>
+<li>I/O中断处理过程</li>
+</ol>
+<p>可将一次中断处理过程简单地归纳为中断请求、中断判优、中断响应、中断服务和中断返回5个阶段。</p>
+<p>至于为什么能准确返回至原程序断点,CPU在中断响应阶段除了将向量地址送至PC外,还做了什么其他操作等问题,将在8.4节详细介绍。</p>
+<h2 id="_5">中断服务程序的流程</h2>
+<ul>
+<li>
+<p>保护现场</p>
+</li>
+<li>
+<p>中断服务 (主体)</p>
+</li>
+<li>
+<p>恢复现场</p>
+</li>
+<li>
+<p>中断返回</p>
+</li>
+</ul>
+<p><img alt="中断流程" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807012032.png" /></p>
+<p>综上所述,从宏观上分析,程序中断方式克服了程序查询方式中的CPU“踏步"现象,实现了CPU与1/0的并行工作,提高了CPU的资源利用率。</p>
+<p>但从微观操作分析,发现CPU在处理中断服务程序时仍需暂停原程序的正常运行,尤其是当高速I/0设备或辅助存储器频繁地、成批地与主存交换信息时,需不断地打断CPU执行主程序而执行中断服务程序。</p>
 
 
 
