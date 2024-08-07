@@ -18,7 +18,7 @@
     
     
       
-        <title>DMA 方式 - 计算机组成原理</title>
+        <title>DMA (Direct Memory Access)方式 - 计算机组成原理</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dma" class="md-skip">
+        <a href="#dma-direct-memory-access" class="md-skip">
           跳转至
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DMA 方式
+              DMA (Direct Memory Access)方式
             
           </span>
         </div>
@@ -698,15 +698,105 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DMA (Direct Memory Access)方式
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    DMA 方式
+    DMA (Direct Memory Access)方式
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dma" class="md-nav__link">
+    <span class="md-ellipsis">
+      DMA接口功能和组成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作流程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="工作流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      传送过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      连接方式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      小结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -740,6 +830,74 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      特点
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dma" class="md-nav__link">
+    <span class="md-ellipsis">
+      DMA接口功能和组成
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作流程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="工作流程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      传送过程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      连接方式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      小结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -753,7 +911,95 @@
                   
 
 
-<h1 id="dma">DMA 方式</h1>
+<h1 id="dma-direct-memory-access">DMA (Direct Memory Access)方式</h1>
+<h2 id="_1">特点</h2>
+<p><img alt="5.45" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807102253.png" /></p>
+<p>由图可知,主存与DMA接口有一条数据通路,这适合于高速I/O与主存之间的信息交换.</p>
+<p>值得注意的是,若出现高速I/0(通过DMA接口)和CPU同时访问主存,CPU必须将总线(如地址线、数据线)占有权让给DMA接口使用,即DMA采用周期窃取的方式占用一个存取周期。</p>
+<p>在DMA方式中,由于DMA接口与CPU共享主存,这就有可能出现两者争用主存的冲突。</p>
+<p>为了有效地分时使用主存,通常DMA与主存交换数据时采用如下三种方法。</p>
+<ol>
+<li>
+<p>停止CPU访问主存</p>
+</li>
+<li>
+<p>周期挪用(或周期窃取)</p>
+</li>
+<li>
+<p>DMA与CPU交替访问</p>
+</li>
+</ol>
+<details class="note">
+<summary>停止CPU访问主存</summary>
+<p><img alt="5.46a" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807103954.png" /></p>
+</details>
+<details class="note">
+<summary>周期挪用(或周期窃取)</summary>
+<p>适用于I/O设备读写周期大于主存周期</p>
+<p><img alt="5.46b" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807104351.png" /></p>
+</details>
+<details class="note">
+<summary>DMA与CPU交替访问</summary>
+<p><img alt="5.46c" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807104707.png" /></p>
+</details>
+<h2 id="dma">DMA接口功能和组成</h2>
+<p>DMA接口应有如下功能:</p>
+<ol>
+<li>
+<p>向CPU申请DMA传送</p>
+</li>
+<li>
+<p>处理总线控制权</p>
+</li>
+<li>
+<p>控制数据传送</p>
+</li>
+<li>
+<p>给出DMA操作完成的信号</p>
+</li>
+</ol>
+<p><img alt="5.47" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807105145.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">包括</p>
+<ol>
+<li>
+<p>主存地址寄存器 (AR)</p>
+</li>
+<li>
+<p>字计数器 (WC)</p>
+</li>
+<li>
+<p>数据缓冲寄存器 (BR)</p>
+</li>
+<li>
+<p>DMA控制逻辑</p>
+</li>
+<li>
+<p>中断机构</p>
+</li>
+<li>
+<p>设备地址寄存器 (DAR)</p>
+</li>
+</ol>
+</div>
+<h2 id="_2">工作流程</h2>
+<h3 id="_3">传送过程</h3>
+<p>分为:</p>
+<ol>
+<li>预处理</li>
+<li>数据传送</li>
+<li>后处理</li>
+</ol>
+<p><img alt="5.48" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807110207.png" /></p>
+<h3 id="_4">连接方式</h3>
+<p><img alt="5.49" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807110359.png" /></p>
+<h3 id="_5">小结</h3>
+<p>与程序中断方式相比,DMA方式有如下特点。</p>
+<p>①从数据传送看,程序中断方式靠程序传送,DMA方式靠硬件传送。</p>
+<p>②从 CPU 响应时间看,程序中断方式是在一条指令执行结束时响应,而DMA方式可在指令周期内的任一存取周期结束时响应。</p>
+<p>③程序中断方式有处理异常事件的能力,DMA方式没有这种能力,主要用于大批数据的传送,如硬盘存取、图像处理、高速数据采集系统等,可提高数据吞吐量。</p>
+<p>④程序中断方式需要中断现行程序,故需保护现场;DMA 方式不中断现行程序,无须保护现场。</p>
+<p>⑤DMA的优先级比程序中断的优先级高。</p>
 
 
 
