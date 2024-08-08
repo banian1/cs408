@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../ch03/5/">
       
       
-        <link rel="next" href="../ch02/">
+        <link rel="next" href="1/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>二进制 - 计算机组成原理</title>
+        <title>存储器 - 计算机组成原理</title>
       
     
     
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              二进制
+              存储器
             
           </span>
         </div>
@@ -210,13 +210,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../ch01/" class="md-tabs__link">
           
   
     
@@ -272,11 +270,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../ch04/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -346,8 +346,6 @@
       
   
   
-    
-  
   
   
     
@@ -360,22 +358,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../ch01/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -387,7 +382,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Ch01
@@ -736,6 +731,8 @@
       
   
   
+    
+  
   
   
     
@@ -750,19 +747,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ch04/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   <span class="md-ellipsis">
@@ -773,13 +773,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_5" id="__nav_5_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Ch04
@@ -795,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch04/1/" class="md-nav__link">
+      <a href="1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,6 +836,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      存储器的层次结构
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -849,7 +875,36 @@
                   
 
 
-<h1 id="_1">二进制</h1>
+<h1 id="_1">存储器</h1>
+<h2 id="_2">概述</h2>
+<p>存储器的分类</p>
+<p>按存储介质</p>
+<ol>
+<li>半导体存储器</li>
+<li>磁表面存储器</li>
+<li>磁芯存储器</li>
+<li>光盘存储器</li>
+</ol>
+<p>按存取方式</p>
+<ol>
+<li>随机存储器</li>
+<li>只读存储器</li>
+<li>串行访问存储器</li>
+</ol>
+<p>按在计算机中的作用分类</p>
+<p>主要有主存储器,辅助存储器,缓冲存储器</p>
+<p><img alt="4.1" src="%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807143520.png" /></p>
+<h2 id="_3">存储器的层次结构</h2>
+<p>实际上,存储系统层次结构主要体现在缓存-主存和主存-辅存这两个存储层次上,如图4.3所示。</p>
+<p>显然,CPU和缓存、主存都能直接交换信息;缓存能直接和 CPU、主存交换信息;主存可以和 CPU、缓存、辅存交换信息。</p>
+<p><img alt="4.3" src="%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807143821.png" /></p>
+<p>主存和缓存之间的数据调动是由硬件自动完成的,对程序员是透明的.</p>
+<p>主存和辅存之间的数据调动是由硬件和操作系统共同完成的.</p>
+<hr />
+<p>程序的地址范围与虚拟存储器的地址空间相对应。例如,机器指令地址码为24位,则虚拟存储器存储单元的个数可达16M。</p>
+<p>可是这个数与主存的实际存储单元的个数相比要大得多,称这类指令地址码为虚地址(虚存地址、虚拟地址)或逻辑地址,而把主存的实际地址称为物理地址或实地址。物理地址是程序在执行过程中能够真正访问的地址,也是实实在在的主存地址。</p>
+<p>对具有虚拟存储器的计算机系统而言,程序员编程时,可用的地址空间远远大于主存空间,使程序员以为自己占有一个容量极大的主存,其实这个主存并不存在,这就是将其称为虚拟存储器的原因对虚拟存储器而言,其逻辑地址变换为物理地址的工作是由计算机系统的硬件和操作系统自动完成的,对程序员是透明的。</p>
+<p>当虚地址的内容在主存时,机器便可立即使用:若虚地址的内容不在主存,则必须先将此虚地址的内容传递到主存的合适单元后再为机器所用。有关这些方面的内容,读者可在“计算机体系结构”和“操作系统”课程中学到。</p>
 
 
 
