@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../../ch05/5/">
       
       
         <link rel="next" href="../2/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>主存储器 - 计算机组成原理</title>
+        <title>CPU的结构 - 计算机组成原理</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#cpu" class="md-skip">
           跳转至
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              主存储器
+              CPU的结构
             
           </span>
         </div>
@@ -270,13 +270,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../ch04/" class="md-tabs__link">
           
   
     
@@ -312,11 +310,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../ch06/1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -771,8 +771,6 @@
       
   
   
-    
-  
   
   
     
@@ -791,22 +789,19 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../ch04/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -817,13 +812,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Ch04
@@ -836,30 +831,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    主存储器
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../ch04/1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -868,185 +843,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      概述
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      随机存续存储器
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="随机存续存储器">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ram-static-ramsram" class="md-nav__link">
-    <span class="md-ellipsis">
-      静态RAM (Static RAM,SRAM)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ram-dynamic-ramdram" class="md-nav__link">
-    <span class="md-ellipsis">
-      动态RAM (Dynamic RAM,DRAM)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      只读存储器
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      存储器与CPU的连接
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="存储器与CPU的连接">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      存储容量的扩展
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cpu_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      存储器与CPU的连接
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      存储器的校验
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="存储器的校验">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      汉明码的组成
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      汉明码的纠错过程
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      提高访存速度的措施
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="提高访存速度的措施">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      单体多字系统
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      多体并行系统
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      高性能存储芯片
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1059,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2/" class="md-nav__link">
+      <a href="../../ch04/2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1080,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3/" class="md-nav__link">
+      <a href="../../ch04/3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1244,8 +1040,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1258,17 +1056,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1279,7 +1080,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Ch06
@@ -1290,10 +1091,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../ch06/1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CPU的结构
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1302,6 +1123,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpu_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU的功能
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU结构框图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      CPU 的寄存器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      控制单元和中断系统
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1314,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch06/2/" class="md-nav__link">
+      <a href="../2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1335,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch06/3/" class="md-nav__link">
+      <a href="../3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1383,161 +1260,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      概述
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      随机存续存储器
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="随机存续存储器">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ram-static-ramsram" class="md-nav__link">
-    <span class="md-ellipsis">
-      静态RAM (Static RAM,SRAM)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ram-dynamic-ramdram" class="md-nav__link">
-    <span class="md-ellipsis">
-      动态RAM (Dynamic RAM,DRAM)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      只读存储器
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      存储器与CPU的连接
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="存储器与CPU的连接">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      存储容量的扩展
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#cpu_1" class="md-nav__link">
     <span class="md-ellipsis">
-      存储器与CPU的连接
+      CPU的功能
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#cpu_2" class="md-nav__link">
     <span class="md-ellipsis">
-      存储器的校验
+      CPU结构框图
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="存储器的校验">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      汉明码的组成
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      汉明码的纠错过程
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#cpu_3" class="md-nav__link">
     <span class="md-ellipsis">
-      提高访存速度的措施
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="提高访存速度的措施">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      单体多字系统
+      CPU 的寄存器
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      多体并行系统
+      控制单元和中断系统
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      高性能存储芯片
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1556,127 +1310,52 @@
                   
 
 
-<h1 id="_1">主存储器</h1>
-<h2 id="_2">概述</h2>
-<p><img alt="4.4" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807221403.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">MDR : memory data register</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">MAR : memory address register</p>
-</div>
-<p>现代计算机的主存都由半导体集成电路构成,图中的驱动器、译码器和读写电路均制作在存储芯片中,而MAR和MDR制作在CPU芯片内。存储芯片和 CPU 芯片可通过总线连接,如图4.5所示。</p>
-<p><img alt="4.5" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807221823.png" /></p>
+<h1 id="cpu">CPU的结构</h1>
+<h2 id="cpu_1">CPU的功能</h2>
+<p>由第1章可知, CPU实质包括运算器和控制器两大部分, 第6章讨论了计算机内各种运算及相应的硬件配置，这里重点介绍控制器的功能。</p>
+<p>对于冯•诺依曼结构的计算机而言, 一旦程序进人存储器后，就可由计算机自动完成取指令 和执行指令的任务，控制器就是专用于完成此项工作的，它负责协调并控制计算机各部件执行程 序的指令序列，其基本功能是取指令、分析指令和执行指令。</p>
 <ol>
-<li>主存中存储单元地址的分配</li>
+<li>取指令</li>
+<li>分析指令</li>
+<li>执行指令</li>
 </ol>
-<p><img alt="4.6" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240807222203.png" /></p>
-<ol>
-<li>主存的技术指标</li>
-</ol>
-<p>主要是容量与速度</p>
-<ul>
-<li>存储容量</li>
-<li>
-<p>存储速度</p>
-<ul>
-<li>存取时间  指启动一次存储器操作到完成所需的全部时间 </li>
-<li>存取周期  指进行连续两次独立存储器操作所需的最小间隔时间</li>
-</ul>
-</li>
-<li>
-<p>存储器带宽</p>
-</li>
-</ul>
-<h2 id="_3">随机存续存储器</h2>
-<p>按存储信息的原理不同</p>
-<h3 id="ram-static-ramsram">静态RAM (Static RAM,SRAM)</h3>
-<p>由于静态RAM是用触发器工作原理存储信息,因此即使信息读出后,它仍保持其原状态不需要再生。但电源掉电时,原存信息丢失,故它属易失性半导体存储器。</p>
-<h3 id="ram-dynamic-ramdram">动态RAM (Dynamic RAM,DRAM)</h3>
-<p>常见的动态RAM基本单元电路有三管式和单管式两种,它们的共同特点都是靠电容存储电荷的原理来寄存信息。若电容上存有足够多的电荷表示存“1”,电容上无电荷表示存“0”。电容上的电荷一般只能维持1~2ms,因此即使电源不掉电,信息也会自动消失。为此,必须在2ms内对其所有存储单元恢复一次原状态,这个过程称为再生或刷新。由于它与静态 RAM 相比,具有集成度更高、功耗更低等特点,目前被各类计算机广泛应用。</p>
-<h2 id="_4">只读存储器</h2>
-<p>按ROM的原始定义，一旦注入　原始信息即不能改变，带随着用户需要，总希望能任意修改ROM内的原始信息．这便出现了</p>
-<ul>
-<li>PROM(Programmable ROM)</li>
-<li>EPROM(Erasable Programmable ROM)</li>
-<li>EEPROM(Electrically Erasable Programmable ROM)等.</li>
-</ul>
-<p>对于半导体ROM,分为MOS型和TTL型</p>
-<ol>
-<li>掩膜ROM</li>
-<li>PROM</li>
-<li>EPROM</li>
-</ol>
-<h2 id="cpu">存储器与CPU的连接</h2>
-<h3 id="_5">存储容量的扩展</h3>
-<p>由于单片存储芯片的容量总是有限的,很难满足实际的需要,因此,必须将若于存储芯片连在一起才能组成足够容量的存储器,称为存储容量的扩展,通常有位扩展和字扩展。</p>
+<p>执 行 指 令 就 是 根 据 分 析 指 令 产 生 的 “ 操 作 命 令 ” 和 “ 操 作 数 地 址 ” 的 要 求 ，形 成 操 作 控 制 信 号 序列(不同的指令有不同的操作控制信号序列)</p>
+<p>此外控制器还必须有处理中断的能力</p>
+<p>总 之 , C P U 必 须 具 有 控 制 程 序 的 顺 宇 执 行 ( 称 指 令 控 制 ) 、产 生 完 成 每 条 指 令 所 需 的 控 制 命 令( 称操作控制)、对各种操作加以时间 上的控制( 称时问控制) 、对数据进行算术运算和逻辑运 算( 数据加工)以及处理中断等功能.</p>
+<h2 id="cpu_2">CPU结构框图</h2>
+<p><img alt="8.1.2" src="../WX20240815-220456%402x.png" /></p>
+<h2 id="cpu_3">CPU 的寄存器</h2>
+<p>CPU 中的寄存器大致可分两类:一类展于用户可见寄存器， 用户可对这类寄存器编程，以及通过优化使CPU因使用这类寄存器而减少对主存的访问次效;</p>
+<p>另一类属于控制和状态奇存器，用户不可对这类寄存器编程，它们被控制部件使用，以控制CPU 的操作，也可被带有特权的操作系统程序使用，从而控制程序的执行。</p>
 <details class="note">
-<summary>位扩展</summary>
-<p><img alt="4.32" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240808204327.png" />
-又如
-<img alt="4.33" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240808204851.png" /></p>
+<summary>用户可见</summary>
+<ul>
+<li>通用寄存器</li>
+<li>数据寄存器</li>
+<li>地址寄存器</li>
+<li>条件码寄存器 (部分透明)</li>
+</ul>
 </details>
 <details class="note">
-<summary>字扩展</summary>
-<p><img alt="4.34" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240808205005.png" />
-A_10 作为片选信号</p>
-</details>
-<h3 id="cpu_1">存储器与CPU的连接</h3>
-<p>pass</p>
-<h2 id="_6">存储器的校验</h2>
-<p>为了能及时变现错误并及时纠正错误,通常可将数据配成汉明码</p>
-<h3 id="_7">汉明码的组成</h3>
-<p>汉明码是由Richard Hanming于1950年提出的,它具有一位纠错能力。</p>
-<p>由编码纠错理论得知,任何一种编码是否具有检测能力和纠错能力,都与编码的最小距离有关。</p>
-<p>所谓编码最小距离,是指在一种编码系统中,任意两组合法代码之间的最少二进制位数的差异。</p>
-<div class="admonition note">
-<p class="admonition-title">编码最小距离</p>
-<p>根据纠错理论得:</p>
-<div class="arithmatex">\[L-1=D+C \qquad  且D \geq C\]</div>
+<summary>控制和状态寄存器</summary>
 <ul>
-<li>L 编码最小距离</li>
-<li>D 纠错能力</li>
-<li>C 检错能力 </li>
+<li>MAR:</li>
+<li>MDR</li>
+<li>PC</li>
+<li>IR</li>
+<li>PSW (program state word)</li>
 </ul>
+</details>
+<div class="admonition note">
+<p class="admonition-title">举例</p>
+<p>不同计算机的CPU中,奇存器组织是不一样的
+<img alt="8.3" src="../WX20240815-221237%402x.png" /></p>
+<p>计算机的设计者们为了给在早期计算机上编写的程序提供向上的兼容性，在新计算机的设 计上经常保留原设计的奇存器组织形式。</p>
+<p><img alt="8.4" src="../WX20240815-221535%402x.png" /></p>
 </div>
-<div class="admonition example">
-<p class="admonition-title">举例说明</p>
-<p>假设我们有以下三个编码：</p>
-<p>0000</p>
-<p>0111</p>
-<p>1110</p>
-<p>它们之间的最小距离是 3。例如，编码 0000 和 0111 之间有3位不同（第2、3、4位），编码 0111 和 1110 之间也有3位不同（第1、3、4位）。</p>
-<p>这种编码可视为最多能检错二位,  或能检错一位、纠错一位。</p>
-<p>可见,倘若能在信息编码中增加若干位检测位,增大L,显然便能提高检错和纠错能力。汉明码就是根据这一理论提出的具有一位纠错能力的编码。</p>
-</div>
-<p>设欲检测的二进制代码为"位,为使其具有纠错能力,需增添k位检测位,组成n+k位的代码。为了能准确对错误定位以及指出代码没错,新增添的检测位数k应满足:</p>
-<div class="arithmatex">\[2^k \geq n+k+1\]</div>
-<p>由此关系可求得不同代码长度n所需检测位的位数k,如表4.2所示。</p>
-<p><img alt="4.2" src="../%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20240808213944.png" /></p>
-<p>设<span class="arithmatex">\(n+k\)</span>位代码自左至右依次编为<span class="arithmatex">\(1,2,3,\ldots ,n+k \)</span>位,而将检测码<span class="arithmatex">\(C_i(i=1,2,4,\ldots )\)</span>,安插在第<span class="arithmatex">\(1,2,4,8,\ldots ,2^{k-1}\)</span>位上.</p>
-<p>这些检测位的位置设置是为了保证它们不同"小组"的奇偶检测任务.</p>
-<p>这种小组的划分有如下特点:</p>
-<p>①每个小组8有一位且仅有一位为它所独占,这一位是其他小组所没有的,即<span class="arithmatex">\(g_i\)</span>小组独占第<span class="arithmatex">\(2_{i-1}\)</span>位(i=1,2,3,…)。</p>
-<p>②每两个小组<span class="arithmatex">\(g_i\)</span>和<span class="arithmatex">\(g_j\)</span>共同占有一位是其他小组没有的,即每两小组<span class="arithmatex">\(g_i\)</span>和<span class="arithmatex">\(g_j\)</span>共同占有第<span class="arithmatex">\(2^{i-1}+2^{j-1}\)</span>位(i,j=1,2,…)。</p>
-<p>③每3个小组<span class="arithmatex">\(g_i\)</span>,<span class="arithmatex">\(g_j\)</span>和<span class="arithmatex">\(g_l\)</span>共同占有第<span class="arithmatex">\(2^{i-1}+2^{j-1}+2^{l-1}\)</span>位,是其他小组所没有的。</p>
-<p>以此类推</p>
-<h3 id="_8">汉明码的纠错过程</h3>
-<p>详见</p>
-<p><a href="https://www.bilibili.com/video/BV1WK411N7kz/?spm_id_from=333.337.search-card.all.click">【官方双语】汉明码Pa■t1，如何克服噪■</a></p>
-<p><a href="https://www.bilibili.com/video/BV1GF411V7sC/?spm_id_from=333.337.search-card.all.click">【硬核科普】ECC内存是如何发现错误并纠正的？</a></p>
-<h2 id="_9">提高访存速度的措施</h2>
-<p>除寻找高速元件和采用层次结构外,调整主存结构也行</p>
-<h3 id="_10">单体多字系统</h3>
-<p>此时字长小于存储单元,一个存储单元能存多个字.</p>
-<p>在一个存取周期内取出多个字,通常有多个指令</p>
-<h3 id="_11">多体并行系统</h3>
-<p>多体并行系统就是采用多体模块组成的存储器。每个模块有相同的容量和存取速度,各模块各自都有独立的地址寄存器(MAR)数据寄存器(MDR)、地址译码、驱动电路和读/写电路它们能并行工作,又能交叉工作。</p>
-<h3 id="_12">高性能存储芯片</h3>
-<ol>
-<li>SDRAN (Synchronous DRAM,同步DRAM)</li>
-<li>RDRAM (Rambus DRAM)</li>
-<li>带Cache的DRAM </li>
-</ol>
+<h2 id="_1">控制单元和中断系统</h2>
+<p>控制单元( CU)是提供完成计算机全部指令操作的微操作命令序列部件。现代计算机中</p>
+<p>微操作命令序列的形成方法有两种:一种是组合逻辑设计方法，为硬连线逻辑; 另—种是微程序设 计方法，为存储逻辑。</p>
 
 
 
